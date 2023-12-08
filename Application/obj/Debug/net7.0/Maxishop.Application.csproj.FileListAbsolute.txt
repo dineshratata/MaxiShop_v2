@@ -1,0 +1,12 @@
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\bin\Debug\net7.0\Maxishop.Application.deps.json
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\bin\Debug\net7.0\Maxishop.Application.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\bin\Debug\net7.0\Maxishop.Application.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.csproj.AssemblyReference.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.AssemblyInfoInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.AssemblyInfo.cs
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.csproj.CoreCompileInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\refint\Maxishop.Application.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\Maxishop.Application.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\Application\obj\Debug\net7.0\ref\Maxishop.Application.dll

@@ -8,6 +8,8 @@
     ".NETCoreApp,Version=v7.0": {
       "MaxiShop/1.0.0": {
         "dependencies": {
+          "MaxiShop.Domain": "1.0.0",
+          "MaxiShop_Infrastructure": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
           "Microsoft.EntityFrameworkCore": "7.0.14",
           "Microsoft.EntityFrameworkCore.Design": "7.0.14",
@@ -613,6 +615,21 @@
             "fileVersion": "6.0.21.52210"
           }
         }
+      },
+      "MaxiShop.Domain/1.0.0": {
+        "runtime": {
+          "MaxiShop.Domain.dll": {}
+        }
+      },
+      "MaxiShop_Infrastructure/1.0.0": {
+        "dependencies": {
+          "MaxiShop.Domain": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "7.0.14",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.14"
+        },
+        "runtime": {
+          "MaxiShop_Infrastructure.dll": {}
+        }
       }
     }
   },
@@ -1090,6 +1107,16 @@
       "sha512": "sha512-IXoJOXIqc39AIe+CIR7koBtRGMiCt/LPM3lI+PELtDIy9XdyeSrwXFdWV9dzJ2Awl0paLWUaknLxFQ5HpHZUog==",
       "path": "system.windows.extensions/6.0.0",
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
+    },
+    "MaxiShop.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MaxiShop_Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     }
   }
 }

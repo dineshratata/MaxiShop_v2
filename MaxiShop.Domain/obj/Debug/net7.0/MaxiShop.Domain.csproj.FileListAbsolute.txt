@@ -1,0 +1,12 @@
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\bin\Debug\net7.0\MaxiShop.Domain.deps.json
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\bin\Debug\net7.0\MaxiShop.Domain.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\bin\Debug\net7.0\MaxiShop.Domain.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.csproj.AssemblyReference.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.AssemblyInfoInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.AssemblyInfo.cs
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.csproj.CoreCompileInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\refint\MaxiShop.Domain.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\MaxiShop.Domain.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop.Domain\obj\Debug\net7.0\ref\MaxiShop.Domain.dll

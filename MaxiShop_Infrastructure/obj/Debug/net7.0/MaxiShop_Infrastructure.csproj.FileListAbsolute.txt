@@ -1,0 +1,17 @@
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop_Infrastructure.deps.json
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop_Infrastructure.runtimeconfig.json
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop_Infrastructure.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop_Infrastructure.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop.Domain.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\bin\Debug\net7.0\MaxiShop.Domain.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.csproj.AssemblyReference.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.AssemblyInfoInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.AssemblyInfo.cs
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.csproj.CopyComplete
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\refint\MaxiShop_Infrastructure.dll
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\MaxiShop_Infrastructure.genruntimeconfig.cache
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop_Infrastructure\obj\Debug\net7.0\ref\MaxiShop_Infrastructure.dll

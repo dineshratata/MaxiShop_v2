@@ -1,4 +1,4 @@
-using MaxiShop.Data;
+using MaxiShop_Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 

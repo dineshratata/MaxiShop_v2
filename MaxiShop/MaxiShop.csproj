@@ -21,4 +21,13 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MaxiShop.Domain\MaxiShop.Domain.csproj" />
+    <ProjectReference Include="..\MaxiShop_Infrastructure\MaxiShop_Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -1,10 +1,12 @@
-﻿using MaxiShop.Data;
-using MaxiShop.Models;
+﻿using MaxiShop_Infrastructure;
+using MaxiShop.Domain;
+
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
+using System.Linq;
 
-namespace MaxiShop.Controllers
+namespace MaxiShop.Controllers 
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -75,7 +77,7 @@ namespace MaxiShop.Controllers
 
         public ActionResult Update([FromBody] Category category)
         {
-            _dbcontext.categories.Update(category);
+            _dbcontext.categories.Update(category); 
             _dbcontext.SaveChanges();
             return Ok();
 
