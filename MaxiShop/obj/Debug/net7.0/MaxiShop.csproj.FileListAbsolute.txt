@@ -15,7 +15,6 @@ C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\Max
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.AssemblyInfoInputs.cache
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.AssemblyInfo.cs
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.csproj.CoreCompileInputs.cache
-C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\staticwebassets\msbuild.MaxiShop.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\staticwebassets\msbuild.build.MaxiShop.props

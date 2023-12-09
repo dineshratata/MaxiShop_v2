@@ -1,12 +1,10 @@
-﻿using MaxiShop_Infrastructure;
-using MaxiShop.Domain;
-
-using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
 using System.Linq;
+using MaxiShop.Domain.Models;
+using MaxiShop_Infrastructure.DbContexts;
 
-namespace MaxiShop.Controllers 
+namespace MaxiShop.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -45,7 +43,7 @@ namespace MaxiShop.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public ActionResult Get(int id )
         {
-            var category =_dbcontext.categories.FirstOrDefault(x => x.Id == id);
+            var category =_dbcontext.categories.FirstOrDefault(x=>x.Id == id);
             
             
 
@@ -68,7 +66,7 @@ namespace MaxiShop.Controllers
         public ActionResult get()
         {
             var catergory = _dbcontext.categories.ToList();
-            return Ok( catergory);
+            return Ok(catergory);
 
 
         }
