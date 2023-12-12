@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc.Diagnostics;
 using System.Linq;
 using MaxiShop.Domain.Models;
 using MaxiShop_Infrastructure.DbContexts;
+using MaxiShop.Domain.Contracts;
 
 namespace MaxiShop.Controllers
 {
@@ -10,26 +11,27 @@ namespace MaxiShop.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ApplicationDbContext _dbcontext;
+        private readonly IcategoryRepository _categoryrepository;
 
+        public CategoryController(IcategoryRepository categoryrepository)
 
-        public CategoryController(ApplicationDbContext dbContext)
         {
 
-            _dbcontext = dbContext;
-
+            _categoryrepository = categoryrepository;
         }
+      
 
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status200OK)]
 
         [HttpPost]
 
-        public ActionResult Create([FromBody] Category category)
+        public async Task <ActionResult> Create([FromBody] Category category)
         {
-            _dbcontext.categories.Add(category);
-            _dbcontext.SaveChanges();
+             
+            var addedEntity = await _categoryrepository.CreateAsync(category);
             return Ok();
+
 
 
         }
@@ -41,9 +43,9 @@ namespace MaxiShop.Controllers
 
 
         [ProducesResponseType(StatusCodes.Status204NoContent)]
-        public ActionResult Get(int id )
+        public async Task  <ActionResult> Get(int id )
         {
-            var category =_dbcontext.categories.FirstOrDefault(x=>x.Id == id);
+            var category = await _categoryrepository.GetByIdAsync(x=>x.Id == id);
             
             
 
@@ -63,29 +65,29 @@ namespace MaxiShop.Controllers
 
         [HttpGet]
 
-        public ActionResult get()
+        public  async Task <ActionResult> get()
         {
-            var catergory = _dbcontext.categories.ToList();
-            return Ok(catergory);
+            var categories = await _categoryrepository.GetAllAsync();
+            return Ok(categories);
+            
 
 
         }
 
         [HttpPut]
 
-        public ActionResult Update([FromBody] Category category)
+        public async Task <ActionResult> Update([FromBody] Category category)
         {
-            _dbcontext.categories.Update(category); 
-            _dbcontext.SaveChanges();
-            return Ok();
-
+              await   _categoryrepository.UpdateAsync(category); 
+          
+            return NoContent();
 
         }
 
 
         [HttpDelete]
 
-        public ActionResult Delete(int id)
+        public  async Task <ActionResult> Delete(int id)
         {
 
             if (id == 0)
@@ -96,20 +98,19 @@ namespace MaxiShop.Controllers
             }
 
 
-           var category =_dbcontext.categories.FirstOrDefault (x=>x.Id == id);    
+           var category = await _categoryrepository.GetByIdAsync(x=>x.Id == id);    
 
-            if (id == null)
+            if (category != null)
             {
+                await _categoryrepository.DeleteAsync(category);
+                return NoContent();
+              
 
-                return NotFound();
+            }
 
-            } 
+            return NotFound();
 
-            _dbcontext.categories.Remove(category);
-            _dbcontext.SaveChanges();
-            return NoContent();
-            
-            
+
 
 
         }

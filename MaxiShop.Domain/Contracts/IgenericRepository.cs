@@ -8,16 +8,15 @@ using System.Threading.Tasks;
 
 namespace MaxiShop.Domain.Contracts
 {
-    public interface IgenericRepository<T> where T : BaseModel
+    public interface IGenericRepository<T> where T : BaseModel
     {
         Task<T> CreateAsync(T entity);
 
-        Task<T> DeleteAsync(T entity);
+        Task   DeleteAsync (T entity);
 
-        Task<IEnumerable<T>> GetAsync(T entity);
+        Task<IEnumerable<T>> GetAllAsync ();
 
-        Task<T> GetbyIdAsync(Expression<Func<T ,bool>> condition );
-
+        Task<T>GetByIdAsync (Expression<Func<T,bool>> condition);
 
     }
 }

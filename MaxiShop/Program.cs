@@ -1,10 +1,14 @@
 using MaxiShop_Infrastructure.DbContexts;
+using MaxiShop_Infrastructure;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
+using MaxiShop_Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
+
+builder.Services.AddInfrastructureServices();
 
 
 builder.Services.AddCors(

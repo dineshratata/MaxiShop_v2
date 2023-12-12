@@ -77,3 +77,4 @@ C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\bin\Debug\net7.0\Max
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\bin\Debug\net7.0\MaxiShop_Infrastructure.dll
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\bin\Debug\net7.0\MaxiShop.Domain.pdb
 C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\bin\Debug\net7.0\MaxiShop_Infrastructure.pdb
+C:\Users\dines\OneDrive\Desktop\.NetEshop\MaxiShop\MaxiShop\obj\Debug\net7.0\MaxiShop.MvcApplicationPartsAssemblyInfo.cs
