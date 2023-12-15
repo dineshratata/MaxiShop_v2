@@ -2,6 +2,39 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "AutoMapper/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {
+            "related": ".pdb"
+          }
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -89,7 +122,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1160,6 +1193,23 @@
           }
         }
       },
+      "Maxishop.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
+          "MaxiShop.Domain": "1.0.0",
+          "MaxiShop_Infrastructure": "1.0.0",
+          "Microsoft.Extensions.DependencyInjection": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Maxishop.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Maxishop.Application.dll": {}
+        }
+      },
       "MaxiShop.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1189,6 +1239,34 @@
     }
   },
   "libraries": {
+    "AutoMapper/12.0.1": {
+      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "type": "package",
+      "path": "automapper/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/7.0.0": {
+      "sha512": "szI4yeRIM7GWe9JyekW0dKYehPB0t6M+I55fPeCebN6PhS7zQZa0eG3bgOnOx+eP3caSNoE7KEJs2rk7MLsh8w==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/7.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll",
+        "lib/netstandard2.0/AutoMapper.Extensions.Microsoft.DependencyInjection.pdb"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -1285,10 +1363,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1301,6 +1379,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1310,7 +1389,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -3349,6 +3428,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Maxishop.Application/1.0.0": {
+      "type": "project",
+      "path": "../Application/Maxishop.Application.csproj",
+      "msbuildProject": "../Application/Maxishop.Application.csproj"
+    },
     "MaxiShop.Domain/1.0.0": {
       "type": "project",
       "path": "../MaxiShop.Domain/MaxiShop.Domain.csproj",
@@ -3364,6 +3448,7 @@
     "net7.0": [
       "MaxiShop.Domain >= 1.0.0",
       "MaxiShop_Infrastructure >= 1.0.0",
+      "Maxishop.Application >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 7.0.3",
       "Microsoft.EntityFrameworkCore >= 7.0.14",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.14",
@@ -3373,19 +3458,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dines\\.nuget\\packages\\": {}
+    "C:\\Users\\shank\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop\\MaxiShop.csproj",
+      "projectUniqueName": "D:\\new Maxishop\\MaxiShop\\MaxiShop.csproj",
       "projectName": "MaxiShop",
-      "projectPath": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop\\MaxiShop.csproj",
-      "packagesPath": "C:\\Users\\dines\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop\\obj\\",
+      "projectPath": "D:\\new Maxishop\\MaxiShop\\MaxiShop.csproj",
+      "packagesPath": "C:\\Users\\shank\\.nuget\\packages\\",
+      "outputPath": "D:\\new Maxishop\\MaxiShop\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\dines\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\shank\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3399,11 +3489,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop.Domain\\MaxiShop.Domain.csproj": {
-              "projectPath": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop.Domain\\MaxiShop.Domain.csproj"
+            "D:\\new Maxishop\\Application\\Maxishop.Application.csproj": {
+              "projectPath": "D:\\new Maxishop\\Application\\Maxishop.Application.csproj"
             },
-            "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop_Infrastructure\\MaxiShop_Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\MaxiShop_Infrastructure\\MaxiShop_Infrastructure.csproj"
+            "D:\\new Maxishop\\MaxiShop.Domain\\MaxiShop.Domain.csproj": {
+              "projectPath": "D:\\new Maxishop\\MaxiShop.Domain\\MaxiShop.Domain.csproj"
+            },
+            "D:\\new Maxishop\\MaxiShop_Infrastructure\\MaxiShop_Infrastructure.csproj": {
+              "projectPath": "D:\\new Maxishop\\MaxiShop_Infrastructure\\MaxiShop_Infrastructure.csproj"
             }
           }
         }
@@ -3466,7 +3559,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }
