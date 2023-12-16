@@ -159,3 +159,7 @@ D:\new Maxishop\MaxiShop\obj\Debug\net7.0\refint\MaxiShop.dll
 D:\new Maxishop\MaxiShop\obj\Debug\net7.0\MaxiShop.pdb
 D:\new Maxishop\MaxiShop\obj\Debug\net7.0\MaxiShop.genruntimeconfig.cache
 D:\new Maxishop\MaxiShop\obj\Debug\net7.0\ref\MaxiShop.dll
+D:\new Maxishop\MaxiShop\bin\Debug\net7.0\AutoMapper.dll
+D:\new Maxishop\MaxiShop\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\new Maxishop\MaxiShop\bin\Debug\net7.0\Maxishop.Application.dll
+D:\new Maxishop\MaxiShop\bin\Debug\net7.0\Maxishop.Application.pdb

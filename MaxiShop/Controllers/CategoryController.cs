@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Diagnostics;
 using System.Linq;
-using MaxiShop.Domain.Models;
+
 using MaxiShop_Infrastructure.DbContexts;
-using MaxiShop.Domain.Contracts;
+
+using Maxishop.Application.Services.Interface;
+using Maxishop.Application.DTO.Category;
 
 namespace MaxiShop.Controllers
 {
@@ -11,13 +13,14 @@ namespace MaxiShop.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IcategoryRepository _categoryrepository;
+        private readonly ICategoryService  _categoryservice;
 
-        public CategoryController(IcategoryRepository categoryrepository)
+        public CategoryController(ICategoryService categoryservice)
 
         {
 
-            _categoryrepository = categoryrepository;
+            _categoryservice = categoryservice;
+        
         }
       
 
@@ -26,10 +29,10 @@ namespace MaxiShop.Controllers
 
         [HttpPost]
 
-        public async Task <ActionResult> Create([FromBody] Category category)
+        public async Task <ActionResult> Create([FromBody] CreateCategoryDto dto)
         {
              
-            var addedEntity = await _categoryrepository.CreateAsync(category);
+            var addedEntity = await _categoryservice.CreateAsync(dto);
             return Ok();
 
 
@@ -45,7 +48,7 @@ namespace MaxiShop.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task  <ActionResult> Get(int id )
         {
-            var category = await _categoryrepository.GetByIdAsync(x=>x.Id == id);
+            var category = await _categoryservice.GetById(id);
             
             
 
@@ -67,7 +70,7 @@ namespace MaxiShop.Controllers
 
         public  async Task <ActionResult> get()
         {
-            var categories = await _categoryrepository.GetAllAsync();
+            var categories = await _categoryservice.GetAllAsync();
             return Ok(categories);
             
 
@@ -76,9 +79,9 @@ namespace MaxiShop.Controllers
 
         [HttpPut]
 
-        public async Task <ActionResult> Update([FromBody] Category category)
+        public async Task <ActionResult> Update([FromBody] UpdateCategoryDto dto)
         {
-              await   _categoryrepository.UpdateAsync(category); 
+              await  _categoryservice.UpdateAsync(dto); 
           
             return NoContent();
 
@@ -98,11 +101,11 @@ namespace MaxiShop.Controllers
             }
 
 
-           var category = await _categoryrepository.GetByIdAsync(x=>x.Id == id);    
+           var category = await _categoryservice.GetById(id);    
 
             if (category != null)
             {
-                await _categoryrepository.DeleteAsync(category);
+                await  _categoryservice. DeleteAsync(id);
                 return NoContent();
               
 
