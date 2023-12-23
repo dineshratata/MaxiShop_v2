@@ -8,7 +8,6 @@
     ".NETCoreApp,Version=v7.0": {
       "MaxiShop/1.0.0": {
         "dependencies": {
-          "MaxiShop.Domain": "1.0.0",
           "MaxiShop_Infrastructure": "1.0.0",
           "Maxishop.Application": "1.0.0",
           "Microsoft.AspNetCore.OpenApi": "7.0.3",
@@ -645,11 +644,15 @@
           "AutoMapper": "12.0.1",
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "7.0.0",
           "MaxiShop.Domain": "1.0.0",
-          "MaxiShop_Infrastructure": "1.0.0",
           "Microsoft.Extensions.DependencyInjection": "7.0.0"
         },
         "runtime": {
           "Maxishop.Application.dll": {}
+        }
+      },
+      "MaxiShop.Domain/1.0.0": {
+        "runtime": {
+          "MaxiShop.Domain.dll": {}
         }
       },
       "MaxiShop_Infrastructure/1.0.0": {
@@ -661,14 +664,6 @@
         },
         "runtime": {
           "MaxiShop_Infrastructure.dll": {}
-        }
-      },
-      "MaxiShop.Domain.Reference/1.0.0.0": {
-        "runtime": {
-          "MaxiShop.Domain.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
         }
       }
     }
@@ -1167,13 +1162,13 @@
       "serviceable": false,
       "sha512": ""
     },
-    "MaxiShop_Infrastructure/1.0.0": {
+    "MaxiShop.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "MaxiShop.Domain.Reference/1.0.0.0": {
-      "type": "reference",
+    "MaxiShop_Infrastructure/1.0.0": {
+      "type": "project",
       "serviceable": false,
       "sha512": ""
     }

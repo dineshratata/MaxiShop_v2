@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "8Q6WkhMUecEH6PxLZegBOV7lF9x5gxg1lUZRSkGljUw4ZFMG8MIq4t9RpzI7r9sUjL6HlFwkzLdIyz8aQdbCXg==",
+  "dgSpecHash": "QSGpJBBRZzlV8YfjgdPDz9hZbGcN1b0V153jWtSzGuRWNd9NgVMPBYIQpSFjfCMHi+6xfFyxIxt++dRHOlyqUg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dines\\OneDrive\\Desktop\\.NetEshop\\MaxiShop\\Application\\Maxishop.Application.csproj",
+  "projectFilePath": "C:\\Users\\HP\\source\\repos\\MaxiShop_v1\\Application\\Maxishop.Application.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dines\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
-    "C:\\Users\\dines\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\dines\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
-    "C:\\Users\\dines\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
-    "C:\\Users\\dines\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\HP\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\7.0.0\\automapper.extensions.microsoft.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\HP\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,20 +1,32 @@
 using MaxiShop_Infrastructure.DbContexts;
 using MaxiShop_Infrastructure;
-using Maxishop.Application;
+
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
 using MaxiShop_Infrastructure.Repositories;
-using Maxishop.Application.Services;
+
+using MaxiShop;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container
 
-builder.Services.AddInfrastructureServices();
-builder.Services.AddApplicationservices();
+builder.Services.AddInfraStuctureServices();
+
 
 builder.Services.AddCors(
     options => options.AddPolicy("CustomPolicy", x => x.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+
+
+
+
+builder.Services.AddDbContext<ApplicationDbContext>(options => {
+    options.UseSqlServer(builder.Configuration.
+    GetConnectionString("MaxiShopConnection"))
+    
+    ;
+});
 
 
 

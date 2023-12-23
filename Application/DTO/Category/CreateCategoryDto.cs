@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Maxishop.Application.DTO.Category
 {
-    public class CreateCategory
+    public class CreateCategoryDto
     {
 
         public string Name { get; set; }

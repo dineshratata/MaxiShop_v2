@@ -14,7 +14,7 @@ namespace Maxishop.Application.Common
 
         public MappingProfile( ) {
 
-            CreateMap<Category,  CreateCategoryDto>().ReverseMap();   
+            CreateMap<Category,CreateCategoryDto>().ReverseMap();   
             CreateMap<Category,UpdateCategoryDto>().ReverseMap();   
             CreateMap<Category, CategoryDto>().ReverseMap(); 
 

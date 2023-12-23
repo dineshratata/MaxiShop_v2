@@ -6,6 +6,8 @@ using MaxiShop_Infrastructure.DbContexts;
 
 using Maxishop.Application.Services.Interface;
 using Maxishop.Application.DTO.Category;
+using MaxiShop.Domain.Contracts;
+using MaxiShop.Domain.Models;
 
 namespace MaxiShop.Controllers
 {
@@ -13,13 +15,14 @@ namespace MaxiShop.Controllers
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly ICategoryService  _categoryservice;
+        private readonly IcategoryRepository  _categoryrepository;
 
-        public CategoryController(ICategoryService categoryservice)
+        public CategoryController(IcategoryRepository categoryrepository)
 
         {
 
-            _categoryservice = categoryservice;
+            _categoryrepository = categoryrepository;
+
         
         }
       
@@ -29,10 +32,10 @@ namespace MaxiShop.Controllers
 
         [HttpPost]
 
-        public async Task <ActionResult> Create([FromBody] CreateCategoryDto dto)
+        public async Task <ActionResult> Create([FromBody] Category category)
         {
              
-            var addedEntity = await _categoryservice.CreateAsync(dto);
+            var addedEntity = await _categoryrepository.CreateAsync(category);
             return Ok();
 
 
@@ -48,14 +51,14 @@ namespace MaxiShop.Controllers
         [ProducesResponseType(StatusCodes.Status204NoContent)]
         public async Task  <ActionResult> Get(int id )
         {
-            var category = await _categoryservice.GetById(id);
+            var category = await _categoryrepository.GetByIdAsync(x=>x.Id==id);
             
             
 
             if (category == null)
             {
 
-                return Ok("PLEASE INPUT CORRECT VALUE");
+                return NotFound($"Category not found for id- {id}");
             }
 
             return Ok(category);
@@ -70,7 +73,7 @@ namespace MaxiShop.Controllers
 
         public  async Task <ActionResult> get()
         {
-            var categories = await _categoryservice.GetAllAsync();
+            var categories = await _categoryrepository.GetAllAsync();
             return Ok(categories);
             
 
@@ -79,9 +82,9 @@ namespace MaxiShop.Controllers
 
         [HttpPut]
 
-        public async Task <ActionResult> Update([FromBody] UpdateCategoryDto dto)
+        public async Task <ActionResult> Update([FromBody] Category category)
         {
-              await  _categoryservice.UpdateAsync(dto); 
+              await _categoryrepository.UpdateAsync(category); 
           
             return NoContent();
 
@@ -101,11 +104,11 @@ namespace MaxiShop.Controllers
             }
 
 
-           var category = await _categoryservice.GetById(id);    
+           var category = await _categoryrepository.GetByIdAsync(x=>x.Id==id);    
 
             if (category != null)
             {
-                await  _categoryservice. DeleteAsync(id);
+                await _categoryrepository.DeleteAsync(category);
                 return NoContent();
               
 

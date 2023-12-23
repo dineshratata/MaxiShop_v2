@@ -9,7 +9,7 @@ namespace Maxishop.Application.Services.Interface
 {
     public interface ICategoryService
     {
-        Task <CategoryDto> CreateAsync (CategoryDto categoryDto);
+        Task <CategoryDto> CreateAsync (CreateCategoryDto createcategoryDto);
 
         Task DeleteAsync(int id );
 

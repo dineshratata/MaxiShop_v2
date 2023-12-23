@@ -33,15 +33,9 @@ namespace MaxiShop_Infrastructure.Migrations
                     b.Property<DateTime>("CreatedDate")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("Createdday")
-                        .HasColumnType("int");
-
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("id")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
